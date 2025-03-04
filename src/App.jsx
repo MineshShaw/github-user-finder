@@ -4,7 +4,7 @@ import './Styles/app.css'
 function App() {
 
   return (
-    <div className="App flex bg-gray-100 h-screen align-middle justify-center">
+    <div className="App flex bg-[#040711] h-screen w-screen align-middle justify-center">
       <Home />
     </div>
   )

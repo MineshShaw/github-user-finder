@@ -42,7 +42,7 @@ A simple web application to search for GitHub users and display their profile de
 3. View the user's profile details.
 
 ## API Reference
-- GitHub API: [https://api.github.com](https://api.github.com)
+- GitHub API: [https://api.github.com](https://docs.github.com/en/rest?apiVersion=2022-11-28)
 
 ## Contributing
 Contributions are welcome! Feel free to submit issues or pull requests.

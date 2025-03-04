@@ -1,5 +1,5 @@
 const useGitHubUser = (setError, setUser, setLoading) => {
-    const token = import.meta.env.API_TOKEN;
+    const token = import.meta.env.VITE_API_TOKEN;
     return (name) => {
         let dataArr = [null, null];
         if (!name) {

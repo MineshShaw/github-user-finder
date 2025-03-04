@@ -48,4 +48,4 @@ A simple web application to search for GitHub users and display their profile de
 Contributions are welcome! Feel free to submit issues or pull requests.
 
 ## Author
-[Minesh Shaw](https://github.com/yourgithubusername)
+[Minesh Shaw](https://github.com/MineshShaw)

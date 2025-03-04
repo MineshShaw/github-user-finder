@@ -1,7 +1,7 @@
 const useGitHubUser = (setError, setUser, setLoading) => {
     const token = "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";
-
     return (name) => {
+        let dataArr = [null, null];
         if (!name) {
             setError("GitHub username is required!");
             setUser(false);
@@ -23,8 +23,25 @@ const useGitHubUser = (setError, setUser, setLoading) => {
         })
         .then(response => response.json())
         .then(data => {
+            dataArr[0] = data;
+            return fetch(data.repos_url, {
+                headers: {
+                    Authorization: `token ${token}`
+                }
+            });
+        })
+        .then(response => {
+            if (!response.ok) {
+                console.log(response);
+                throw new Error(response.status);
+            }
+            return response;
+        })
+        .then(response => response.json())
+        .then(data => {
+            dataArr[1] = data;
             setLoading(false);
-            setUser(data);
+            setUser(dataArr);
             setError(false);})
         .catch(error => {
             console.error("Error fetching user data:", error);

@@ -15,7 +15,7 @@ const Home = () => {
             <SearchBar states={{setLoading, setError, setUser}}/>
             {loading? <Loader />: null}
             {error? <ErrorMessage message={error} />: null}
-            {user? <UserCard user={user} /> : null}
+            {user? <UserCard data={user} /> : null}
         </div>
      );
 }

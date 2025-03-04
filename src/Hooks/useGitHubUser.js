@@ -1,7 +1,5 @@
-import process from 'node:process';
-
 const useGitHubUser = (setError, setUser, setLoading) => {
-    const token = process.env.API_TOKEN;
+    const token = import.meta.env.API_TOKEN;
     return (name) => {
         let dataArr = [null, null];
         if (!name) {

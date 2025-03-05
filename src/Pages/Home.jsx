@@ -11,7 +11,7 @@ const Home = () => {
 
     return ( 
         <div className="home p-[10px] w-screen gap-[10px] flex flex-col items-center justify-center">
-            <h1 className="text-5xl font-bold text-white">GitHub User Search</h1>
+            <h1 className="page-title text-5xl font-bold text-white">GitHub User Search</h1>
             <SearchBar states={{setLoading, setError, setUser}}/>
             {loading? <Loader />: null}
             {error? <ErrorMessage message={error} />: null}

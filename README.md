@@ -15,28 +15,33 @@ A simple web application to search for GitHub users and display their profile de
 ## File Structure
 ```sh
 github-user-finder/
+│── public/
 │── src/
-│   ├── components/
-│   │   ├── SearchBar.jsx       // User input field
-│   │   ├── UserCard.jsx        // Displays user details
-│   │   ├── Loader.jsx          // Loading state component
-│   │   └── ErrorMessage.jsx    // Displays errors
+│   ├── Components/
+│   │   ├── ErrorMessage.jsx       // Displays errors
+│   │   ├── Loader.jsx             // Loading state component
+│   │   ├── SearchBar.jsx          // User input field
+│   │   └── UserCard.jsx           // Displays user details
 │   │
-│   ├── pages/
-│   │   └── Home.jsx            // Main page component
-│   │
-│   ├── hooks/
+│   ├── Hooks/
 │   │   └── useGitHubUser.js    // useEffect hook to fetch API data
 │   │
-│   ├── styles/
+│   ├── Pages/
+│   │   └── Home.jsx            // Main page component
+│   │
+│   │
+│   ├── Styles/
 │   │   └── app.css             // Global styles
 │   │
 │   ├── App.jsx                 // Root component
 │   └── main.jsx                // Entry point
-│── public/
+│── .gitignore
+│── eslint.config.js
+│── index.html
+│── package-lock.json
 │── package.json
-└── README.md
-
+│── README.md
+└── vite.config.js
 ```
 
 ## Getting Started

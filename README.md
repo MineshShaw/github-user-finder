@@ -12,6 +12,34 @@ A simple web application to search for GitHub users and display their profile de
 - Tailwind CSS
 - GitHub API
 
+## File Structure
+```sh
+github-user-finder/
+│── src/
+│   ├── components/
+│   │   ├── SearchBar.jsx       // User input field
+│   │   ├── UserCard.jsx        // Displays user details
+│   │   ├── Loader.jsx          // Loading state component
+│   │   ├── ErrorMessage.jsx    // Displays errors
+│   │   ├── RecentSearches.jsx  // Optional: Stores previous searches
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx            // Main page component
+│   │
+│   ├── hooks/
+│   │   ├── useGitHubUser.js    // useEffect hook to fetch API data
+│   │
+│   ├── styles/
+│   │   ├── app.css             // Global styles
+│   │
+│   ├── App.jsx                 // Root component
+│   ├── main.jsx                // Entry point
+│── public/
+│── package.json
+│── README.md
+
+```
+
 ## Getting Started
 
 ### Prerequisites
